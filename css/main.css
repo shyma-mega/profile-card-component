@@ -18,6 +18,16 @@
 body {
     background-color: var(--Dark-cyan);
     font-family: 'Kumbh Sans', sans-serif;
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    background-position: left -19vw top -65vh, right -15vw bottom -120vh;
+}
+
+@media (max-width:767px) {
+    body {
+        background-position: left -175vw top -70vh, right -170vw bottom -105vh;
+    }
 }
 
 .container {
@@ -38,13 +48,14 @@ body {
     -ms-transform: translateY(50%);
     -o-transform: translateY(50%);
     margin-bottom: 50px;
+
 }
 
 .container header {
     width: 100%;
     height: 120px;
     background-color: aqua;
-    background-image: url(./images/pngtree-abstract-creative-blue-cyan-aqua-bokeh-picture-image_1445472.jpg);
+    background-image: url(../images/bg-pattern-card.svg);
     background-size: 100%;
     border-radius: 10px 10px 0 0;
     -webkit-border-radius: 10px 10px 0 0;
